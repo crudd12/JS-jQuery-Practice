@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -9,6 +8,21 @@
         //Check the readme file in this folder for instructions.
 
         //Your Code Goes Here
+        function createDiv() {
+            $(document).ready(function () {
+                var test = {
+                    id: 'div',
+                    class: 'divclass',
+                    css: {
+                        'color': 'green'
+                    }
+                };
+                let newDiv = $("<div>", test);
+                newDiv.html('This is a NEW div');
+                $('body').append(newDiv);
+            })
+        }
+
 
     </script>
     <meta charset="utf-8">
